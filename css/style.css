@@ -1,0 +1,43 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300&display=swap');
+
+
+:root {
+    --primary-color: hsl(330,87%,17%);
+    --secondary-color : hsla(203,100%,13%,1);
+}
+body{
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+/* Start Header Section */
+/* Start NavBar */
+header {
+    height: 100vh;
+    background:linear-gradient(270deg,
+        rgba(0,0,0,0),rgba(0,0,0,0.7)
+    ),url("../assets/img/banner/banner2.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.navbar {
+    background: linear-gradient(rgba(0,0,0,0.3),var(--secondary-color));
+    padding: 10px 30px;
+    
+}
+.lines1,.lines2,.lines3 {
+    width: 25px;
+    height: 3px;
+    margin: 6px;
+}
+.crossxs .lines1{
+    transform: rotate(-45deg) translate(-6px,6px);
+    /* transform-origin: left; */
+}
+.crossxs .lines2{
+    opacity: 0;
+}
+.crossxs .lines3{
+    transform: rotate(45deg) translate(-6px,-6PX);
+}
+/* 4BC */
