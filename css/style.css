@@ -19,6 +19,7 @@ header {
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+    background-attachment: fixed;
 }
 .navbar {
     background: linear-gradient(rgba(0,0,0,0.3),var(--secondary-color));
@@ -63,3 +64,44 @@ header {
 
 }
 /* End Banner */
+/* Start About Us Section */
+.aboutuss {
+    /* background:linear-gradient(270deg,
+        rgba(0,0,0,0),rgba(0,0,0,0.7)
+    ),url("../assets/img/banner/banner2.jpg"); */
+    background-image:linear-gradient(
+        rgba(0,0,0,0.3),
+        rgba(0,0,0,0.5)
+    ),url("../assets/img/banner/banner2.jpg") ;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+.aboutuss .lines {
+    width: 30%;
+    height: 1.2px;
+    background-color: #fff;
+    margin-bottom: 3px;
+}
+.aboutuss .lines:nth-of-type(2){
+    width: 20%;
+    height: 1px;
+}
+.aboutuss .lines:nth-of-type(3){
+    width: 10%;
+    height: 0.5px;
+    margin-bottom: 30px;
+}
+.aboutuss h5 {
+    background-color: #f4f4f4;
+    color: #000;
+    border-left: 5px solid red;
+    padding: 10px;
+}
+/* ~ sibling ကို လှမ်းခေါ်ရန် */
+.aboutuss h5 ~ p {
+    text-align: left;
+    margin: 30px 0;
+}
+/* End About Us Section */
