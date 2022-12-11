@@ -25,6 +25,15 @@ header {
     padding: 10px 30px;
     
 }
+.menuitems {
+    color: #f4f4f4;
+    font-size: 13px;
+    letter-spacing: 1px;
+    transition: all 0.3s ease 0s;
+}
+.menuitems:hover {
+    color: skyblue;
+}
 .lines1,.lines2,.lines3 {
     width: 25px;
     height: 3px;
@@ -40,4 +49,17 @@ header {
 .crossxs .lines3{
     transform: rotate(45deg) translate(-6px,-6PX);
 }
-/* 4BC */
+/* End Nav Bar */
+/* Start Banner */
+.banners {
+    
+    width: 80%;
+
+    position: absolute;
+
+    left: 50%;
+    top: 50%;
+    transform: translate(-50% ,-50%);
+
+}
+/* End Banner */
