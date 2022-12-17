@@ -26,6 +26,10 @@ header {
     padding: 10px 30px;
     
 }
+.navmenus {
+    background: linear-gradient(rgba(0,0,0,0.3),var(--secondary-color));
+    padding: 5px 30px;
+}
 .menuitems {
     color: #f4f4f4;
     font-size: 13px;
