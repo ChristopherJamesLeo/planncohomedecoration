@@ -176,6 +176,13 @@ header {
     right: 0;
     top: 0;
 }
-/* End property */
 
-/* 18AB */
+.propertylists {
+    color: #777;
+    cursor: pointer;
+    user-select: none;
+}
+.propertylists.activeitems {
+    color: var(--primary-color);
+}
+/* End property */
