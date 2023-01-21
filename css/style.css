@@ -186,3 +186,52 @@ header {
     color: var(--primary-color);
 }
 /* End property */
+/* Start Adv Section */
+.missions{
+    background-color: var(--secondary-color);
+}
+.fromleft {
+    /* animation: name duration timing-function delay iteration-count direction fill-mode; */
+    animation: fromleftani 3s linear 0s;
+}
+.fromright{
+    animation: fromrightani 3s linear 0s;
+}
+
+@keyframes fromleftani{
+    0%{
+        transform: translateX(-120px);
+        opacity: 0;
+    }
+    100%{
+        transform: translateX(0px);
+        opacity: 1;
+    }
+}
+
+@keyframes fromrightani {
+    0%{
+        transform: translateX(120px);
+        opacity: 0;
+    }
+    100%{
+        transform: translateX(0px);
+        opacity: 1;
+    }
+}
+/* End Adv Section */
+/* Start Services Section */
+.services{
+    background: linear-gradient(
+        200deg,
+        var(--primary-color),
+        var(--secondary-color)
+    )
+}
+.servicecards img{
+    transition: all 0.5s ease 0s;
+}
+.servicecards:hover img{
+    transform: scale(1.1);
+}
+/* End Services Section */
