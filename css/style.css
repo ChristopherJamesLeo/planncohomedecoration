@@ -228,10 +228,90 @@ header {
         var(--secondary-color)
     )
 }
+
+.servicecards {
+    overflow: hidden;
+    position: relative;
+    white-space: pre-wrap;
+}
+/* white-space အား parent တွင်လည်းကောင်း သူ့အထဲတွင်လည်းကောင်း pre-wrap ထားပေးရမည် သူ့ထဲရှိcontentထဲတွင်လဲ \a သို့မဟုတ် \A အား ထည့်ပေးရမည် */
+/* white-space နှင့် /A သည် content တွင်ရေးထားသော စာသားများအား နောက်တစ်ကြောင်းဆင်းစေချင်လျှင် အသုံးပြုနိုင်သည် */
+/* \ သည် unicode အသံုးပြုလိုပါက သုံးသည် */
+.servicecards::before{
+    content: "You may need our service ? \a Try and upgrade your living enviroment. \a \f004 \f004 \f004";
+    width: 100%;
+    height: 100%;
+    font-family: "Font Awesome 5 Free";
+    background-color: rgba(0,0,0,0.4);  
+    color: #fff;
+    text-align: center;
+    line-height: 2;
+
+    position: absolute;
+    left: 0;
+    top: 0;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    z-index: 1;
+
+}
+.servicecards:hover::before{
+    content: "";
+    background-color: rgba(0,0,0,0.1); 
+}
 .servicecards img{
     transition: all 0.5s ease 0s;
 }
 .servicecards:hover img{
     transform: scale(1.1);
 }
+.headings {
+    width: 40%;
+    background-color: rgba(0,0,0,0.7);
+    font-size: 14px;
+    opacity: 0.7;
+    letter-spacing: 2px;
+
+    text-align: center;
+
+    position: absolute;
+    right: 0;
+    top: 80%;
+}
 /* End Services Section */
+/* Start Client Section */
+ul.clientlists{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+ul.clientlists li {
+    margin: auto;
+    background-color: #f4f4f4;
+    border: 5px solid #e9e9e9;
+    padding: 20px 30px;
+}
+ul.clientlists li img {
+    width: 100px;
+}
+ul.clientlists li:hover {
+    border-color: var(--secondary-color);
+    box-shadow: 3px -2px 0 rgba(0,0,0,0.3);
+}
+@media(max-width:768px){
+    ul.clientlists li {
+        border: 2px solid #e9e9e9;
+        padding: 10px 5px;
+    }
+    ul.clientlists li img {
+        width: 70px;
+    }
+}
+/* End Clients Section */
