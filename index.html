@@ -302,38 +302,80 @@
     <!-- End Client Section -->
 
     <!-- Start customers section -->
-    <section id="customer" class="p-3 customers">
+    <section id="customer" class="py-3 customers">
         <div class="container-fluid">
             <!-- Start title -->
             <div class="row text-center">
                 <div class="col-12">
-                    <h3 class="titles">What Customers Say?</h3> 
+                    <h3 class="text-light titles">What Customers Say?</h3> 
                 </div>
             </div>
             <!-- End Title -->
             <div class="row">
                 <div class="col-md-6 mx-auto">
-                    <div class="">
-                        <div class="carousel-indicator">
-
-                        </div>
+                    <div id="customercarousels" class="carousel slide" data-bs-ride="carousel">
+                        <!-- customercarousels သည် dot အတွက် carousel သည် carousel ပြုလုပ်ရန် slide သည် smooth ဖြစ်ရန် data-bs-ride သည် dot နှင့်အတူ carousel အား မောင်းနှင်ရန်ဖြစ်သည်  -->
+                        <ol class="carousel-indicators">
+                            <li class="active" data-bs-target="#customercarousels" data-bs-slide-to="0"></li>
+                            <li data-bs-target="#customercarousels" data-bs-slide-to="1"></li>
+                            <li data-bs-target="#customercarousels" data-bs-slide-to="2"></li>
+                        </ol>
                         <div class="carousel-inner">
                             <!-- start user 1 -->
-                            <div>
-                                <img src="./assets/img/users/user1.jpg" class="" alt="user1">
-                                <p>
-                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam eos, praesentium delectus, expedita cum voluptas aut explicabo dolor animi minus 
-                                </p>
-                                <h5>Ms.July</h5>
-                                <ul class="d-flex">
-                                    <li><i class="fas fa-star text-warning"></i></li>
-                                    <li><i class="fas fa-star text-warning"></i></li>
-                                    <li><i class="fas fa-star text-warning"></i></li>
-                                    <li><i class="fas fa-star text-warning"></i></li>
-                                    <li><i class="fas fa-star text-warning"></i></li>
+                            <div class="carousel-item active text-center">
+                                <img src="./assets/img/users/user1.jpg" class="rounded-circle" width="150px" alt="user1">
+                                
+                                <blockquote>
+                                    <p class="text-light">
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam eos, praesentium delectus, expedita cum voluptas aut explicabo dolor animi minus 
+                                    </p>
+                                </blockquote>
+                                <h5 class="text-white fw-bold mb-3 text-uppercase">Ms.July</h5>
+                                <ul class="list-inline mb-5">
+                                    <li class="list-inline-item"><i class="fas fa-star text-warning"></i></li>
+                                    <li class="list-inline-item"><i class="fas fa-star text-warning"></i></li>
+                                    <li class="list-inline-item"><i class="fas fa-star text-warning"></i></li>
+                                    <li class="list-inline-item"><i class="fas fa-star text-warning"></i></li>
+                                    <li class="list-inline-item"><i class="fas fa-star text-warning"></i></li>
                                 </ul>
                             </div>
                             <!-- end user 1  -->
+                            <!-- start user 2 -->
+                            <div class="carousel-item text-center">
+                                <img src="./assets/img/users/user2.jpg" class="rounded-circle" width="150px" alt="user1">
+                                <blockquote>
+                                    <p class="text-light">
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam eos, praesentium delectus, expedita cum voluptas aut explicabo dolor animi minus 
+                                    </p>
+                                </blockquote>
+                                <h5 class="text-white fw-bold mb-3 text-uppercase">Ms.July</h5>
+                                <ul class="list-inline mb-5">
+                                    <li class="list-inline-item"><i class="fas fa-star text-warning"></i></li>
+                                    <li class="list-inline-item"><i class="fas fa-star text-warning"></i></li>
+                                    <li class="list-inline-item"><i class="fas fa-star text-warning"></i></li>
+                                    <li class="list-inline-item"><i class="fas fa-star text-warning"></i></li>
+                                    <li class="list-inline-item"><i class="fas fa-star text-warning"></i></li>
+                                </ul>
+                            </div>
+                            <!-- end user 2  -->
+                            <!-- start user 3 -->
+                            <div class="carousel-item text-center">
+                                <img src="./assets/img/users/user3.jpg" class="rounded-circle" width="150px" alt="user1">
+                                <blockquote>
+                                    <p class="text-light">
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam eos, praesentium delectus, expedita cum voluptas aut explicabo dolor animi minus 
+                                    </p>
+                                </blockquote>
+                                <h5 class="text-white fw-bold mb-3 text-uppercase">Ms.July</h5>
+                                <ul class="list-inline mb-5">
+                                    <li class="list-inline-item"><i class="fas fa-star text-warning"></i></li>
+                                    <li class="list-inline-item"><i class="fas fa-star text-warning"></i></li>
+                                    <li class="list-inline-item"><i class="fas fa-star text-warning"></i></li>
+                                    <li class="list-inline-item"><i class="fas fa-star text-warning"></i></li>
+                                    <li class="list-inline-item"><i class="fas fa-star text-warning"></i></li>
+                                </ul>
+                            </div>
+                            <!-- end user 3  -->                            
                         </div>
                     </div>
                 </div>
@@ -341,6 +383,172 @@
         </div>
     </section>
     <!-- End customers section -->
+    <!-- Start Request Quotaitons -->
+    <section>
+        <div class="container">
+            <div class="quotes">
+                <div class="infos">
+                    <div class="pe-3">
+                        <img src="./assets/img/icon/phoneicon.png" class="phoneicons" alt="phoneicon">
+                    </div>
+                    <div class="text-light">
+                        <h2 class="fw-bold text-uppercase">Request A Free Quote</h2>
+                        <p class="lead">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        </p>
+                    </div>
+                </div>
+                <a href="tel:0997092779" class="btn btn-calls">call now <i class="fas fa-phone"></i></a>
+            </div>
+        </div>
+    </section>
+    <!-- End Request Quotations -->
+    <!-- Start Furniture Services Section -->
+    <section id="furniture" >
+        <div class="container">
+            <!-- Start title -->
+            <div class="row text-center">
+                <div class="col-12">
+                    <h3 class="text-muted titles">FURNITURT SERVICES</h3> 
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur dolor voluptatibus, 
+                    </p>
+                </div>
+            </div>
+            <!-- End Title -->
+            <div class="row furicons">
+                <div class="col-md-4 text-center">
+                    <img src="./assets/img/icon/services1.png" alt="service 1">
+                    <h4>Fast Service</h4>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias aliquam fugit culpa dolorum praesentium recusandae dolor rem ipsa possimus ad. Sapiente, impedit iure provident reiciendis iusto ab dolor eius distinctio?
+                    </p>
+                </div>
+                <div class="col-md-4 text-center">
+                    <img src="./assets/img/icon/services2.png" alt="service 1">
+                    <h4>Secure Payments</h4>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias aliquam fugit culpa dolorum praesentium recusandae dolor rem ipsa possimus ad. Sapiente, impedit iure provident reiciendis iusto ab dolor eius distinctio?
+                    </p>
+                </div>
+                <div class="col-md-4 text-center">
+                    <img src="./assets/img/icon/services3.png" alt="service 1">
+                    <h4>Expert Team</h4>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias aliquam fugit culpa dolorum praesentium recusandae dolor rem ipsa possimus ad. Sapiente, impedit iure provident reiciendis iusto ab dolor eius distinctio?
+                    </p>
+                </div>
+                <div class="col-md-4 text-center">
+                    <img src="./assets/img/icon/services4.png" alt="service 1">
+                    <h4>Affordable Services</h4>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias aliquam fugit culpa dolorum praesentium recusandae dolor rem ipsa possimus ad. Sapiente, impedit iure provident reiciendis iusto ab dolor eius distinctio?
+                    </p>
+                </div>
+                <div class="col-md-4 text-center">
+                    <img src="./assets/img/icon/services5.png" alt="service 1">
+                    <h4>90 Days Warnning</h4>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias aliquam fugit culpa dolorum praesentium recusandae dolor rem ipsa possimus ad. Sapiente, impedit iure provident reiciendis iusto ab dolor eius distinctio?
+                    </p>
+                </div>
+                <div class="col-md-4 text-center">
+                    <img src="./assets/img/icon/services6.png" alt="service 1">
+                    <h4>FAward Winning</h4>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias aliquam fugit culpa dolorum praesentium recusandae dolor rem ipsa possimus ad. Sapiente, impedit iure provident reiciendis iusto ab dolor eius distinctio?
+                    </p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <!-- End Furniture Services Section -->
+    <!-- Start Contact SEction -->
+    <section id="contact" class="p-5 contacts">
+        <div class="container-fluid">
+            <div class="col-lg-5">
+                <h5 class="display-4 mb-3 text-light">Get New Letter</h5>
+                <form action="" method="get" class="">
+                    <div class="form-group py-4">
+                        <input type="text" name="name" id="name" class="form-control p-3 inputs" placeholder="Enter your name" autocomplete="off">
+                        <label for="name" class="labels">Name</label>
+                    </div>
+                    <div class="form-group py-4">
+                        <input type="email" name="email" id="email" class="form-control p-3 inputs" placeholder="Enter your email" autocomplete="off">
+                        <label for="email" class="labels">Email</label>
+                    </div>
+                    <div class="d-grid">
+                        <button type="submit" class="btn text-uppercase fw-bold rounded-0 submit-btns">Subscribe</button>
+                    </div>
+                    <div class="my-5">
+                        <div class="form-check form-switch">
+                            <input type="checkbox" name="accept" id="accept" class="form-check-input">
+                            <label for="accept" class="text-white">I agree</label>
+                        </div>
+                    </div>
+                </form>
+
+            </div>
+        </div>
+    </section>
+    <!-- End Contact Section -->
+    <!-- Start Footer Section -->
+    <footer class="bg-dark px-5">
+        <div class="container-fluid">
+            <div class="row text-light py-4">
+                <div class="col-md-3 col-sm-6">
+                    <h5 class="mb-3"><img src="./assets/img/fav/favicon.png" width="70px" alt="favicon">About Plannco</h5>
+                    <p class="small">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor adipisci ad voluptates illo nesciunt facere saepe necessitatibus tenetur cumque rerum, mollitia maxime nulla quibusdam cupiditate unde corporis consequuntur illum quaerat!
+                    </p>
+                </div>
+                <div class="col-md-3 col-sm-6">
+                    <h5 class="mb-3">Visit Us</h5>
+                    <ul class="list-unstyled">
+                        <!-- list-unstyled သည် boolet point များဖျောက်ပေးမည်  -->
+                        <li><a href="javascript:void(0)" class="footerlinks">Home</a></li>
+                        <li><a href="javascript:void(0)" class="footerlinks">About Us</a></li>
+                        <li><a href="javascript:void(0)" class="footerlinks">Properties</a></li>
+                        <li><a href="javascript:void(0)" class="footerlinks">Service</a></li>
+                        <li><a href="javascript:void(0)" class="footerlinks">Customers</a></li>
+                        <li><a href="javascript:void(0)" class="footerlinks">Funiture</a></li>
+                        <li><a href="javascript:void(0)" class="footerlinks">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3 col-sm-6">
+                    <h5 class="mb-3">Need Help</h5>
+                    <ul class="list-unstyled text-uppercase">
+                        <!-- list-unstyled သည် boolet point များဖျောက်ပေးမည်  -->
+                        <li><a href="javascript:void(0)" class="footerlinks">Customer Service</a></li>
+                        <li><a href="javascript:void(0)" class="footerlinks">Online Chat</a></li>
+                        <li><a href="javascript:void(0)" class="footerlinks">Support</a></li>
+                        <li><a href="javascript:void(0)" class="footerlinks">Info@plannco.com</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3 col-sm-6">
+                    <h5 class="mb-3">Contact Us</h5>
+                    <ul class="list-unstyled small">
+                        <!-- list-unstyled သည် boolet point များဖျောက်ပေးမည်  -->
+                        <li>2/76 Oakthar myo thit bago city , Bago Township </li>
+                        <li>Phone: +95 9 957092779 / +95 9 751099740</li>
+                    </ul>
+                </div>
+
+            </div>
+
+            <div class="text-light border-top pt-4 d-flex justify-content-between">
+                <p>&copy; <span id="getyear"></span> Copyright. Inc,All rights reserved</p>
+                <ul class="list-unstyled list-inline">
+                    <li class="ms-3 list-inline-item"><a href="javascript:viod(0)"><i class="fab fa-twitter"></i></a></li>
+                    <li class="ms-3 list-inline-item"><a href="javascript:viod(0)"><i class="fab fa-instagram"></i></a></li>
+                    <li class="ms-3 list-inline-item"><a href="javascript:viod(0)"><i class="fab fa-facebook-f"></i></a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+    <!-- End Footer SEction -->
+
     <script src="./assets/libs/bootstrap-5.2.3-dist/js/bootstrap.bundle.min.js"></script>
     <!-- J Query js 1 -->
     <script src="https://code.jquery.com/jquery-3.6.2.min.js"></script>
@@ -353,4 +561,4 @@
 </html>
 
 
-<!-- 28ST -->
+<!-- 12FT -->
