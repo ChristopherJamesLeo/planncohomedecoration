@@ -10,6 +10,22 @@ body{
 }
 
 /* Start Header Section */
+
+/* Start Back to top */
+/* .fixed-bottom */
+.btn-backtotop{
+    background-color: var(--primary-color);
+    color: #fff;
+    padding: 10px;
+    border-radius: 10px;
+
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+    z-index: 100;
+
+}
+/* End Back to Top */
 /* Start NavBar */
 header {
     height: 100vh;
@@ -430,3 +446,16 @@ ul.clientlists li:hover {
 }
 
 /* End Contact Section */
+
+/* Start Footer Section */
+.footerlinks {
+    color: #e2e2e2;
+    text-decoration: none;
+    font-size: 13px;
+    transition: all 0.3s ease 0s;
+}
+.footerlinks:hover {
+    color: orange;
+    border-bottom: 1px solid orange;
+}
+/* End Footer Section */
